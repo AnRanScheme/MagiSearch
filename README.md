@@ -22,4 +22,4 @@
         setmagiCategoryButtonType(type: .colorful)
         '''
         
-        
+![这是列子](https://github.com/AnRanScheme/MagiSearch/raw/master/gif/Untitled.gif)
