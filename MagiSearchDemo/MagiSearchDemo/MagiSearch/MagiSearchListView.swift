@@ -10,15 +10,15 @@ import UIKit
 
 class MagiSearchListView: UITableView {
     
-    open var database = [Any]()
+    var database = [Any]()
     
-    open var searchResultDatabase = [Any]()
+    var searchResultDatabase = [Any]()
     
-    open var magiSearchListViewDelegate: MagiSearchListViewDelegate?
+    weak var magiSearchListViewDelegate: MagiSearchListViewDelegate?
     
-    open var magiSearch = MagiSearch()
+    var magiSearch = MagiSearch()
     
-    open var magiSearchTextFieldText: String? {
+    var magiSearchTextFieldText: String? {
         didSet {
             guard let text = magiSearchTextFieldText else { return }
             
@@ -27,6 +27,7 @@ class MagiSearchListView: UITableView {
             let result = objectification.objects(contain: text)
             
             searchResultDatabase = result
+            
             if text.isEmpty {
                 initData(database: database)
             }
@@ -34,11 +35,11 @@ class MagiSearchListView: UITableView {
         }
     }
     
-    public override init(frame: CGRect, style: UITableViewStyle) {
+    override init(frame: CGRect, style: UITableViewStyle) {
         super.init(frame: frame, style: style)
         setupUI()
     }
-
+    
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -50,23 +51,23 @@ class MagiSearchListView: UITableView {
                       forCellReuseIdentifier: MagiSearchListViewCell.ID)
     }
     
-    open func initData(database: [Any]) {
+    func initData(database: [Any]) {
         self.database = database
         self.searchResultDatabase = database
         self.reloadData()
     }
-
-
+    
+    
 }
 
 extension MagiSearchListView: UITableViewDataSource {
     
-    open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = magiSearchListViewDelegate?.magiSearchListView(tableView, cellForRowAt: indexPath) else { return UITableViewCell() }
         return cell
     }
     
-    open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return searchResultDatabase.count
     }
     
@@ -74,12 +75,12 @@ extension MagiSearchListView: UITableViewDataSource {
 
 extension MagiSearchListView: UITableViewDelegate {
     
-    open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         magiSearchListViewDelegate?.magiSearchListView(tableView, didSelectRowAt: indexPath)
     }
     
-    open func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
         magiSearchListViewDelegate?.magiSearchListViewDidScroll()
     }
     

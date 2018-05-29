@@ -8,15 +8,19 @@
 
 import UIKit
 
-public enum MagiCategoryButtonType {
-    case background
-    case border
-    case colorful
+
+enum MagiHotSearchStyle: Int {
+    case normal = 0
+    case colorful = 1
+    case border = 2
+    case arcBorder = 3
+    case rank = 4
+    case rectang = 5
 }
 
 open class MagiCategoryButton: UIButton {
     
-    open var type: MagiCategoryButtonType? {
+    var type: MagiHotSearchStyle? {
         didSet {
             guard let _type = type else { return }
             setType(_type)
@@ -51,7 +55,14 @@ open class MagiCategoryButton: UIButton {
                     case false:
                         layer.borderColor = UIColor.white.cgColor
                     }
-                case .background: break
+                case .normal:
+                    break
+                case .arcBorder:
+                    break
+                case .rank:
+                    break
+                case .rectang:
+                    break
                 }
                 
             } else {
@@ -74,10 +85,10 @@ open class MagiCategoryButton: UIButton {
         layer.cornerRadius = frame.height * 0.1
     }
     
-    open func setType(_ type: MagiCategoryButtonType) {
+    func setType(_ type: MagiHotSearchStyle) {
         
         switch type {
-        case .background:
+        case .normal:
             layer.borderColor = nil
             layer.borderWidth = 0
             backgroundColor = UIColor.init(red: 246.0/255.0, green: 246.0/255.0, blue: 246.0/255.0, alpha: 1)
@@ -96,6 +107,12 @@ open class MagiCategoryButton: UIButton {
             backgroundColor = randomColor()
             setTitleColor(UIColor.white, for: .normal)
             setTitleColor(UIColor.white.withAlphaComponent(0.3), for: .highlighted)
+        case .arcBorder:
+            break
+        case .rank:
+            break
+        case .rectang:
+            break
         }
         
     }

@@ -28,7 +28,7 @@ open class MagiSearchMainView: UIView {
     
     var margin: CGFloat = 15
     
-    var delegate: MagiSearchMainViewDelegate?
+    weak var delegate: MagiSearchMainViewDelegate?
     
     var magiSearch = MagiSearch()
     
@@ -42,7 +42,7 @@ open class MagiSearchMainView: UIView {
         super.init(coder: aDecoder)
     }
     
-    func setMagiCategoryButtonType(type: MagiCategoryButtonType) {
+    func setMagiCategoryButtonType(type: MagiHotSearchStyle) {
         for magiCategoryButton in self.magiCategoryButtons {
             magiCategoryButton.type = type
         }

@@ -8,23 +8,84 @@
 
 import UIKit
 
-//private let minimumHitArea = CGSize(width: 44, height: 44)
-//
-//extension UIButton {
-//    open override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
-//        // if the button is hidden/disabled/transparent it can't be hit
-//        if self.isHidden || !self.isUserInteractionEnabled || self.alpha < 0.01 { return nil }
-//        
-//        // increase the hit frame to be at least as big as minimumHitArea
-//        let buttonSize = self.bounds.size
-//        let widthToAdd = max(minimumHitArea.width - buttonSize.width, 0)
-//        let heightToAdd = max(minimumHitArea.height - buttonSize.height, 0)
-//        let largerFrame = self.bounds.insetBy(dx: -widthToAdd / 2, dy: -heightToAdd / 2)
-//        
-//        // perform hit test on larger frame
-//        return (largerFrame.contains(point)) ? self : nil
-//    }
-//}
+// MARK: - frame设置扩展
+public extension UIView {
+    
+    
+    var magi_x:CGFloat{
+        get{
+            return self.frame.origin.x
+        }
+        
+        set{
+            self.frame.origin.x = newValue
+        }
+    }
+    
+    var magi_y:CGFloat{
+        get{
+            return self.frame.origin.y
+        }
+        
+        set{
+            self.frame.origin.y = newValue
+        }
+    }
+    
+    var magi_width:CGFloat{
+        get{
+            return self.frame.size.width
+        }
+        
+        set{
+            self.frame.size.width = newValue
+        }
+    }
+    
+    var magi_height:CGFloat{
+        get{
+            return self.frame.size.height
+        }
+        
+        set{
+            self.frame.size.height = newValue
+        }
+    }
+    
+    var magi_size:CGSize{
+        get{
+            return self.frame.size
+        }
+        
+        set{
+            self.frame.size = newValue
+        }
+    }
+    
+    var magi_centerX:CGFloat{
+        get{
+            return self.center.x
+        }
+        
+        set{
+            self.center.x = newValue
+        }
+    }
+    
+    var magi_centerY:CGFloat{
+        get{
+            return self.center.y
+        }
+        
+        set{
+            self.center.y = newValue
+        }
+    }
+    
+    
+}
+
+
 
 extension UIColor {
     

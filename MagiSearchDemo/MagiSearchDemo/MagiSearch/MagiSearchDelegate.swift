@@ -13,7 +13,7 @@ public protocol MagiSearchDelegate: MagiSearchMainViewDelegate, MagiSearchListVi
 }
 
 
-public protocol MagiSearchMainViewDelegate {
+public protocol MagiSearchMainViewDelegate: class {
     
     func magiCategoryButtonClicked(_ text: String)
     
@@ -23,7 +23,7 @@ public protocol MagiSearchMainViewDelegate {
     
 }
 
-public protocol MagiSearchListViewDelegate {
+public protocol MagiSearchListViewDelegate: class {
     
     func magiSearchListViewClicked(_ key: String)
     

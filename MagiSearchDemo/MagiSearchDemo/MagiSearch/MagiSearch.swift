@@ -9,10 +9,11 @@
 import UIKit
 
 open class MagiSearch: NSObject {
+    
     var pref: UserDefaults!
     
-    open static let shared: MagiSearch = MagiSearch()
-    
+    static let shared: MagiSearch = MagiSearch()
+
     public override init() {
         pref = UserDefaults.standard
     }

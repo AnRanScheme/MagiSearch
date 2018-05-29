@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA1CDB4320BD220700982695 /* MagiConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CDB4220BD220700982695 /* MagiConst.swift */; };
 		FAF9815320BB9B2800B74623 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9815220BB9B2800B74623 /* AppDelegate.swift */; };
 		FAF9815520BB9B2800B74623 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9815420BB9B2800B74623 /* ViewController.swift */; };
 		FAF9815820BB9B2800B74623 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF9815620BB9B2800B74623 /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA1CDB4220BD220700982695 /* MagiConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagiConst.swift; sourceTree = "<group>"; };
 		FAF9814F20BB9B2800B74623 /* MagiSearchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagiSearchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF9815220BB9B2800B74623 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAF9815420BB9B2800B74623 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 		FAF9818020BB9B5100B74623 /* MagiSearch */ = {
 			isa = PBXGroup;
 			children = (
+				FA1CDB4220BD220700982695 /* MagiConst.swift */,
 				FAF9818D20BBEB3A00B74623 /* MagiSearch.swift */,
 				FAF9818120BB9B7100B74623 /* MagiSearch.xcassets */,
 				FAF9818320BBA68000B74623 /* Objectification.swift */,
@@ -320,6 +323,7 @@
 				FAF9819620BC09B300B74623 /* MagiSearchTextField.swift in Sources */,
 				FAF9819820BC0EC900B74623 /* MagiSearchMainView.swift in Sources */,
 				FAF9819020BBED2D00B74623 /* MagiSearchDelegate.swift in Sources */,
+				FA1CDB4320BD220700982695 /* MagiConst.swift in Sources */,
 				FAF9819420BC082500B74623 /* MagiSearchListView.swift in Sources */,
 				FAF9819E20BC189600B74623 /* DetailViewController.swift in Sources */,
 				FAF9818620BBE0B400B74623 /* MagiSearchModel.swift in Sources */,
