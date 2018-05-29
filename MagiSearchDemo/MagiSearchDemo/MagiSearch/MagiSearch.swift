@@ -43,11 +43,18 @@ open class MagiSearch: NSObject {
         if let _histories = pref.object(forKey: "histories") as? [String] {
             histories = _histories
         }
-        histories.append(value)
-        let array = histories.filterDuplicates{
-            $0
+
+        for (index, ele) in histories.enumerated() {
+            if ele == value {
+                histories.remove(at: index)
+            }
         }
-        pref.set(array, forKey: "histories")
+        histories.append(value)
+//
+//        let array = histories.filterDuplicates{
+//            $0
+//        }
+        pref.set(histories, forKey: "histories")
     }
     
     func getSearchHistories() -> [String]? {

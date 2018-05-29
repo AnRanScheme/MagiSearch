@@ -92,6 +92,7 @@ extension MagiSearchView: MagiSearchMainViewDelegate {
     
     func magiCategoryButtonClicked(_ text: String) {
         searchBar?.text = text
+        searchBar?.resignFirstResponder()
         MagiSearch.shared.appendSearchHistories(value: text)
         magiSearchMainView.redrawSearchHistoryButtons()
         delegate?.magiCategoryButtonClicked(text)
@@ -99,6 +100,7 @@ extension MagiSearchView: MagiSearchMainViewDelegate {
     
     func magiSearchHistoryButtonClicked(_ text: String) {
         searchBar?.text = text
+        searchBar?.resignFirstResponder()
         MagiSearch.shared.appendSearchHistories(value: text)
         magiSearchMainView.redrawSearchHistoryButtons()
         delegate?.magiSearchHistoryButtonClicked(text)
