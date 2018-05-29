@@ -8,28 +8,6 @@
 
 import UIKit
 
-class MagiDropDownMenu: MagiSearchModel {
-    var starCount = 512
-    var description = "Awesome Dropdown menu for iOS with Swift 3"
-    var version = "2.3.0"
-    var url = "https://github.com/younatics/magiDropDownMenu"
-}
-
-class MagiSearchData: MagiSearchModel {
-    var title = "magiSearch"
-    var starCount = 271
-    var description = "Awesome fully customize search view like Pinterest written in Swift 3"
-    var version = "0.3.1"
-    var url = "https://github.com/younatics/magiSearch"
-}
-
-class MagiExpandableCell: MagiSearchModel {
-    var title = "magiExpandableCell"
-    var starCount = 191
-    var description = "Awesome expandable, collapsible tableview cell for iOS written in Swift 3"
-    var version = "1.1.0"
-    var url = "https://github.com/younatics/magiExpandableCell"
-}
 
 class SearchViewController: MagiSearchViewController {
     
@@ -53,9 +31,9 @@ class SearchViewController: MagiSearchViewController {
         magiSearchInit()
         self.delegate = self
 
-        let database1 = MagiDropDownMenu("MagiDropDownMenu")
-        let database2 = MagiSearchData("MagiSearchData")
-        let database3 = MagiExpandableCell("MagiExpandableCell")
+        let database1 = "MagiDropDownMenu"
+        let database2 = "MagiSearchData"
+        let database3 = "MagiExpandableCell"
         let demoDatabase = [database1, database2, database3]
         
         initData(demoDatabase)
