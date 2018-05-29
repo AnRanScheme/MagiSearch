@@ -91,10 +91,16 @@ class MagiSearchView: UIView {
 extension MagiSearchView: MagiSearchMainViewDelegate {
     
     func magiCategoryButtonClicked(_ text: String) {
+        searchBar?.text = text
+        MagiSearch.shared.appendSearchHistories(value: text)
+        magiSearchMainView.redrawSearchHistoryButtons()
         delegate?.magiCategoryButtonClicked(text)
     }
     
     func magiSearchHistoryButtonClicked(_ text: String) {
+        searchBar?.text = text
+        MagiSearch.shared.appendSearchHistories(value: text)
+        magiSearchMainView.redrawSearchHistoryButtons()
         delegate?.magiSearchHistoryButtonClicked(text)
     }
 
@@ -108,6 +114,10 @@ extension MagiSearchView: UIScrollViewDelegate {
 }
 
 extension MagiSearchView: MagiSearchListViewDelegate {
+    
+    func magiSearchListViewDidScroll() {
+        searchBar?.resignFirstResponder()
+    }
 
     func magiSearchListViewClicked(_ key: String) {
         searchBar?.resignFirstResponder()

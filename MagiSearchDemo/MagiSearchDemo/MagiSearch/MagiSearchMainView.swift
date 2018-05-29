@@ -112,7 +112,7 @@ open class MagiSearchMainView: UIView {
         searchHistoryLabel.font = UIFont.systemFont(ofSize: 13)
         searchHistoryLabel.textColor = UIColor.darkGray
         addSubview(searchHistoryLabel)
-        
+        redrawSearchHistoryButtons()
     }
     
     func redrawSearchHistoryButtons() {
@@ -131,7 +131,10 @@ open class MagiSearchMainView: UIView {
         let searchHistoryLabelOriginY: CGFloat = searchHistoryLabel.frame.origin.y + searchHistoryLabel.frame.height
 
         for i in 0..<histories.count {
-            let view = MagiSearchHistoryView(frame: CGRect(x: margin, y: searchHistoryLabelOriginY + CGFloat(i * 40) , width: width - (margin * 2), height: 40))
+            let view = MagiSearchHistoryView(frame: CGRect(x: margin,
+                                                           y: searchHistoryLabelOriginY + CGFloat(i * 40),
+                                                           width: width - (margin * 2),
+                                                           height: 40))
             view.magiSearchHistoryButton.addTarget(self,
                                                    action: #selector(magiSearchHistoryButtonClicked(_:)),
                                                    for: .touchUpInside)
@@ -159,7 +162,7 @@ open class MagiSearchMainView: UIView {
                                                     y: clearHistoryButtonY,
                                                     width: width - (margin * 2),
                                                     height: 40))
-        clearHistoryButton.setTitle("清除历史", for: .normal)
+        clearHistoryButton.setTitle("清空搜索历史", for: .normal)
         clearHistoryButton.titleLabel?.font = UIFont.systemFont(ofSize: 13)
         clearHistoryButton.setTitleColor(UIColor.darkGray, for: .normal)
         clearHistoryButton.setTitleColor(UIColor.lightGray, for: .highlighted)
@@ -167,6 +170,16 @@ open class MagiSearchMainView: UIView {
                                      action: #selector(clearHistoryButtonClicked),
                                      for: .touchUpInside)
         addSubview(clearHistoryButton)
+        
+        if histories.count == 0 {
+            clearHistoryButton.isHidden = true
+            searchHistoryLabel.isHidden = true
+        }
+        
+        else {
+            clearHistoryButton.isHidden = false
+            searchHistoryLabel.isHidden = false
+        }
         
         delegate?.magiSearchMainViewSearchHistoryChanged()
     }

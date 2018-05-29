@@ -38,19 +38,21 @@ open class MagiSearch: NSObject {
         pref.set(histories, forKey: "histories")
     }
     
-    open func appendSearchHistories(value: String) {
+    func appendSearchHistories(value: String) {
         var histories = [String]()
         if let _histories = pref.object(forKey: "histories") as? [String] {
             histories = _histories
         }
         histories.append(value)
-        
-        pref.set(histories, forKey: "histories")
+        let array = histories.filterDuplicates{
+            $0
+        }
+        pref.set(array, forKey: "histories")
     }
     
-    open func getSearchHistories() -> [String]? {
+    func getSearchHistories() -> [String]? {
         guard let histories = pref.object(forKey: "histories") as? [String] else { return nil }
-        return histories
+        return histories.reversed()
     }
     
     

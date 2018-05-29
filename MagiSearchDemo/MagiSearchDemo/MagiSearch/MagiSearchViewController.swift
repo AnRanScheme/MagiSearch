@@ -24,7 +24,7 @@ class MagiSearchViewController: UIViewController {
     
     var magiSearchView: MagiSearchView!
     
-    var magiSerach = MagiSearch()
+    var magiSerach = MagiSearch.shared
     
     var searchBar: UISearchBar?
     
@@ -44,6 +44,11 @@ class MagiSearchViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         searchBar?.becomeFirstResponder()
     }
     
