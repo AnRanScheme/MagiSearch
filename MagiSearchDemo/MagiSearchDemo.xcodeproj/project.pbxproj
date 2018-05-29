@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAF9815320BB9B2800B74623 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9815220BB9B2800B74623 /* AppDelegate.swift */; };
+		FAF9815520BB9B2800B74623 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9815420BB9B2800B74623 /* ViewController.swift */; };
+		FAF9815820BB9B2800B74623 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF9815620BB9B2800B74623 /* Main.storyboard */; };
+		FAF9815A20BB9B2B00B74623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF9815920BB9B2B00B74623 /* Assets.xcassets */; };
+		FAF9815D20BB9B2B00B74623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF9815B20BB9B2B00B74623 /* LaunchScreen.storyboard */; };
+		FAF9816820BB9B2B00B74623 /* MagiSearchDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9816720BB9B2B00B74623 /* MagiSearchDemoTests.swift */; };
+		FAF9817320BB9B2B00B74623 /* MagiSearchDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9817220BB9B2B00B74623 /* MagiSearchDemoUITests.swift */; };
+		FAF9818220BB9B7100B74623 /* MagiSearch.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF9818120BB9B7100B74623 /* MagiSearch.xcassets */; };
+		FAF9818420BBA68000B74623 /* Objectification.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9818320BBA68000B74623 /* Objectification.swift */; };
+		FAF9818620BBE0B400B74623 /* MagiSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9818520BBE0B400B74623 /* MagiSearchModel.swift */; };
+		FAF9818820BBE13100B74623 /* MagiSearchExension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9818720BBE13100B74623 /* MagiSearchExension.swift */; };
+		FAF9818A20BBE9EF00B74623 /* MagiCategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9818920BBE9EF00B74623 /* MagiCategoryButton.swift */; };
+		FAF9818C20BBEA0A00B74623 /* MagiSearchHistoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9818B20BBEA0A00B74623 /* MagiSearchHistoryButton.swift */; };
+		FAF9818E20BBEB3A00B74623 /* MagiSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9818D20BBEB3A00B74623 /* MagiSearch.swift */; };
+		FAF9819020BBED2D00B74623 /* MagiSearchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9818F20BBED2D00B74623 /* MagiSearchDelegate.swift */; };
+		FAF9819220BC07B700B74623 /* MagiSearchListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9819120BC07B700B74623 /* MagiSearchListViewCell.swift */; };
+		FAF9819420BC082500B74623 /* MagiSearchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9819320BC082500B74623 /* MagiSearchListView.swift */; };
+		FAF9819620BC09B300B74623 /* MagiSearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9819520BC09B300B74623 /* MagiSearchTextField.swift */; };
+		FAF9819820BC0EC900B74623 /* MagiSearchMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9819720BC0EC900B74623 /* MagiSearchMainView.swift */; };
+		FAF9819A20BC116700B74623 /* MagiSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9819920BC116700B74623 /* MagiSearchView.swift */; };
+		FAF9819C20BC15F400B74623 /* MagiSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9819B20BC15F400B74623 /* MagiSearchViewController.swift */; };
+		FAF9819E20BC189600B74623 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9819D20BC189600B74623 /* DetailViewController.swift */; };
+		FAF981A020BC19A900B74623 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9819F20BC19A900B74623 /* SearchViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAF9816420BB9B2B00B74623 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAF9814720BB9B2800B74623 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAF9814E20BB9B2800B74623;
+			remoteInfo = MagiSearchDemo;
+		};
+		FAF9816F20BB9B2B00B74623 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAF9814720BB9B2800B74623 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAF9814E20BB9B2800B74623;
+			remoteInfo = MagiSearchDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAF9814F20BB9B2800B74623 /* MagiSearchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagiSearchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF9815220BB9B2800B74623 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAF9815420BB9B2800B74623 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAF9815720BB9B2800B74623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAF9815920BB9B2B00B74623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAF9815C20BB9B2B00B74623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAF9815E20BB9B2B00B74623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF9816320BB9B2B00B74623 /* MagiSearchDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagiSearchDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF9816720BB9B2B00B74623 /* MagiSearchDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiSearchDemoTests.swift; sourceTree = "<group>"; };
+		FAF9816920BB9B2B00B74623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF9816E20BB9B2B00B74623 /* MagiSearchDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagiSearchDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF9817220BB9B2B00B74623 /* MagiSearchDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiSearchDemoUITests.swift; sourceTree = "<group>"; };
+		FAF9817420BB9B2B00B74623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF9818120BB9B7100B74623 /* MagiSearch.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MagiSearch.xcassets; sourceTree = "<group>"; };
+		FAF9818320BBA68000B74623 /* Objectification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objectification.swift; sourceTree = "<group>"; };
+		FAF9818520BBE0B400B74623 /* MagiSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiSearchModel.swift; sourceTree = "<group>"; };
+		FAF9818720BBE13100B74623 /* MagiSearchExension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiSearchExension.swift; sourceTree = "<group>"; };
+		FAF9818920BBE9EF00B74623 /* MagiCategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiCategoryButton.swift; sourceTree = "<group>"; };
+		FAF9818B20BBEA0A00B74623 /* MagiSearchHistoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiSearchHistoryButton.swift; sourceTree = "<group>"; };
+		FAF9818D20BBEB3A00B74623 /* MagiSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiSearch.swift; sourceTree = "<group>"; };
+		FAF9818F20BBED2D00B74623 /* MagiSearchDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiSearchDelegate.swift; sourceTree = "<group>"; };
+		FAF9819120BC07B700B74623 /* MagiSearchListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiSearchListViewCell.swift; sourceTree = "<group>"; };
+		FAF9819320BC082500B74623 /* MagiSearchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiSearchListView.swift; sourceTree = "<group>"; };
+		FAF9819520BC09B300B74623 /* MagiSearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiSearchTextField.swift; sourceTree = "<group>"; };
+		FAF9819720BC0EC900B74623 /* MagiSearchMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiSearchMainView.swift; sourceTree = "<group>"; };
+		FAF9819920BC116700B74623 /* MagiSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiSearchView.swift; sourceTree = "<group>"; };
+		FAF9819B20BC15F400B74623 /* MagiSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagiSearchViewController.swift; sourceTree = "<group>"; };
+		FAF9819D20BC189600B74623 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FAF9819F20BC19A900B74623 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAF9814C20BB9B2800B74623 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF9816020BB9B2B00B74623 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF9816B20BB9B2B00B74623 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAF9814620BB9B2800B74623 = {
+			isa = PBXGroup;
+			children = (
+				FAF9815120BB9B2800B74623 /* MagiSearchDemo */,
+				FAF9816620BB9B2B00B74623 /* MagiSearchDemoTests */,
+				FAF9817120BB9B2B00B74623 /* MagiSearchDemoUITests */,
+				FAF9815020BB9B2800B74623 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAF9815020BB9B2800B74623 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9814F20BB9B2800B74623 /* MagiSearchDemo.app */,
+				FAF9816320BB9B2B00B74623 /* MagiSearchDemoTests.xctest */,
+				FAF9816E20BB9B2B00B74623 /* MagiSearchDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAF9815120BB9B2800B74623 /* MagiSearchDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9818020BB9B5100B74623 /* MagiSearch */,
+				FAF9815220BB9B2800B74623 /* AppDelegate.swift */,
+				FAF9815420BB9B2800B74623 /* ViewController.swift */,
+				FAF9819F20BC19A900B74623 /* SearchViewController.swift */,
+				FAF9819D20BC189600B74623 /* DetailViewController.swift */,
+				FAF9815620BB9B2800B74623 /* Main.storyboard */,
+				FAF9815920BB9B2B00B74623 /* Assets.xcassets */,
+				FAF9815B20BB9B2B00B74623 /* LaunchScreen.storyboard */,
+				FAF9815E20BB9B2B00B74623 /* Info.plist */,
+			);
+			path = MagiSearchDemo;
+			sourceTree = "<group>";
+		};
+		FAF9816620BB9B2B00B74623 /* MagiSearchDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9816720BB9B2B00B74623 /* MagiSearchDemoTests.swift */,
+				FAF9816920BB9B2B00B74623 /* Info.plist */,
+			);
+			path = MagiSearchDemoTests;
+			sourceTree = "<group>";
+		};
+		FAF9817120BB9B2B00B74623 /* MagiSearchDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9817220BB9B2B00B74623 /* MagiSearchDemoUITests.swift */,
+				FAF9817420BB9B2B00B74623 /* Info.plist */,
+			);
+			path = MagiSearchDemoUITests;
+			sourceTree = "<group>";
+		};
+		FAF9818020BB9B5100B74623 /* MagiSearch */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9818D20BBEB3A00B74623 /* MagiSearch.swift */,
+				FAF9818120BB9B7100B74623 /* MagiSearch.xcassets */,
+				FAF9818320BBA68000B74623 /* Objectification.swift */,
+				FAF9818520BBE0B400B74623 /* MagiSearchModel.swift */,
+				FAF9818720BBE13100B74623 /* MagiSearchExension.swift */,
+				FAF9818920BBE9EF00B74623 /* MagiCategoryButton.swift */,
+				FAF9818B20BBEA0A00B74623 /* MagiSearchHistoryButton.swift */,
+				FAF9818F20BBED2D00B74623 /* MagiSearchDelegate.swift */,
+				FAF9819120BC07B700B74623 /* MagiSearchListViewCell.swift */,
+				FAF9819320BC082500B74623 /* MagiSearchListView.swift */,
+				FAF9819520BC09B300B74623 /* MagiSearchTextField.swift */,
+				FAF9819720BC0EC900B74623 /* MagiSearchMainView.swift */,
+				FAF9819920BC116700B74623 /* MagiSearchView.swift */,
+				FAF9819B20BC15F400B74623 /* MagiSearchViewController.swift */,
+			);
+			path = MagiSearch;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAF9814E20BB9B2800B74623 /* MagiSearchDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF9817720BB9B2B00B74623 /* Build configuration list for PBXNativeTarget "MagiSearchDemo" */;
+			buildPhases = (
+				FAF9814B20BB9B2800B74623 /* Sources */,
+				FAF9814C20BB9B2800B74623 /* Frameworks */,
+				FAF9814D20BB9B2800B74623 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagiSearchDemo;
+			productName = MagiSearchDemo;
+			productReference = FAF9814F20BB9B2800B74623 /* MagiSearchDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAF9816220BB9B2B00B74623 /* MagiSearchDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF9817A20BB9B2B00B74623 /* Build configuration list for PBXNativeTarget "MagiSearchDemoTests" */;
+			buildPhases = (
+				FAF9815F20BB9B2B00B74623 /* Sources */,
+				FAF9816020BB9B2B00B74623 /* Frameworks */,
+				FAF9816120BB9B2B00B74623 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAF9816520BB9B2B00B74623 /* PBXTargetDependency */,
+			);
+			name = MagiSearchDemoTests;
+			productName = MagiSearchDemoTests;
+			productReference = FAF9816320BB9B2B00B74623 /* MagiSearchDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAF9816D20BB9B2B00B74623 /* MagiSearchDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF9817D20BB9B2B00B74623 /* Build configuration list for PBXNativeTarget "MagiSearchDemoUITests" */;
+			buildPhases = (
+				FAF9816A20BB9B2B00B74623 /* Sources */,
+				FAF9816B20BB9B2B00B74623 /* Frameworks */,
+				FAF9816C20BB9B2B00B74623 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAF9817020BB9B2B00B74623 /* PBXTargetDependency */,
+			);
+			name = MagiSearchDemoUITests;
+			productName = MagiSearchDemoUITests;
+			productReference = FAF9816E20BB9B2B00B74623 /* MagiSearchDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAF9814720BB9B2800B74623 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = MacBook;
+				TargetAttributes = {
+					FAF9814E20BB9B2800B74623 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					FAF9816220BB9B2B00B74623 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = FAF9814E20BB9B2800B74623;
+					};
+					FAF9816D20BB9B2B00B74623 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = FAF9814E20BB9B2800B74623;
+					};
+				};
+			};
+			buildConfigurationList = FAF9814A20BB9B2800B74623 /* Build configuration list for PBXProject "MagiSearchDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAF9814620BB9B2800B74623;
+			productRefGroup = FAF9815020BB9B2800B74623 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAF9814E20BB9B2800B74623 /* MagiSearchDemo */,
+				FAF9816220BB9B2B00B74623 /* MagiSearchDemoTests */,
+				FAF9816D20BB9B2B00B74623 /* MagiSearchDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAF9814D20BB9B2800B74623 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF9815D20BB9B2B00B74623 /* LaunchScreen.storyboard in Resources */,
+				FAF9815A20BB9B2B00B74623 /* Assets.xcassets in Resources */,
+				FAF9815820BB9B2800B74623 /* Main.storyboard in Resources */,
+				FAF9818220BB9B7100B74623 /* MagiSearch.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF9816120BB9B2B00B74623 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF9816C20BB9B2B00B74623 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAF9814B20BB9B2800B74623 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF9819A20BC116700B74623 /* MagiSearchView.swift in Sources */,
+				FAF9818420BBA68000B74623 /* Objectification.swift in Sources */,
+				FAF9819C20BC15F400B74623 /* MagiSearchViewController.swift in Sources */,
+				FAF981A020BC19A900B74623 /* SearchViewController.swift in Sources */,
+				FAF9819620BC09B300B74623 /* MagiSearchTextField.swift in Sources */,
+				FAF9819820BC0EC900B74623 /* MagiSearchMainView.swift in Sources */,
+				FAF9819020BBED2D00B74623 /* MagiSearchDelegate.swift in Sources */,
+				FAF9819420BC082500B74623 /* MagiSearchListView.swift in Sources */,
+				FAF9819E20BC189600B74623 /* DetailViewController.swift in Sources */,
+				FAF9818620BBE0B400B74623 /* MagiSearchModel.swift in Sources */,
+				FAF9815520BB9B2800B74623 /* ViewController.swift in Sources */,
+				FAF9818820BBE13100B74623 /* MagiSearchExension.swift in Sources */,
+				FAF9815320BB9B2800B74623 /* AppDelegate.swift in Sources */,
+				FAF9818C20BBEA0A00B74623 /* MagiSearchHistoryButton.swift in Sources */,
+				FAF9818A20BBE9EF00B74623 /* MagiCategoryButton.swift in Sources */,
+				FAF9819220BC07B700B74623 /* MagiSearchListViewCell.swift in Sources */,
+				FAF9818E20BBEB3A00B74623 /* MagiSearch.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF9815F20BB9B2B00B74623 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF9816820BB9B2B00B74623 /* MagiSearchDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF9816A20BB9B2B00B74623 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF9817320BB9B2B00B74623 /* MagiSearchDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAF9816520BB9B2B00B74623 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAF9814E20BB9B2800B74623 /* MagiSearchDemo */;
+			targetProxy = FAF9816420BB9B2B00B74623 /* PBXContainerItemProxy */;
+		};
+		FAF9817020BB9B2B00B74623 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAF9814E20BB9B2800B74623 /* MagiSearchDemo */;
+			targetProxy = FAF9816F20BB9B2B00B74623 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAF9815620BB9B2800B74623 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAF9815720BB9B2800B74623 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAF9815B20BB9B2B00B74623 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAF9815C20BB9B2B00B74623 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAF9817520BB9B2B00B74623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAF9817620BB9B2B00B74623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAF9817820BB9B2B00B74623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TDBLA72SEX;
+				INFOPLIST_FILE = MagiSearchDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.anran.MagiSearchDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAF9817920BB9B2B00B74623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TDBLA72SEX;
+				INFOPLIST_FILE = MagiSearchDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.anran.MagiSearchDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAF9817B20BB9B2B00B74623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MagiSearchDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.anran.MagiSearchDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagiSearchDemo.app/MagiSearchDemo";
+			};
+			name = Debug;
+		};
+		FAF9817C20BB9B2B00B74623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MagiSearchDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.anran.MagiSearchDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagiSearchDemo.app/MagiSearchDemo";
+			};
+			name = Release;
+		};
+		FAF9817E20BB9B2B00B74623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MagiSearchDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.anran.MagiSearchDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MagiSearchDemo;
+			};
+			name = Debug;
+		};
+		FAF9817F20BB9B2B00B74623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MagiSearchDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.anran.MagiSearchDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MagiSearchDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAF9814A20BB9B2800B74623 /* Build configuration list for PBXProject "MagiSearchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF9817520BB9B2B00B74623 /* Debug */,
+				FAF9817620BB9B2B00B74623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF9817720BB9B2B00B74623 /* Build configuration list for PBXNativeTarget "MagiSearchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF9817820BB9B2B00B74623 /* Debug */,
+				FAF9817920BB9B2B00B74623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF9817A20BB9B2B00B74623 /* Build configuration list for PBXNativeTarget "MagiSearchDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF9817B20BB9B2B00B74623 /* Debug */,
+				FAF9817C20BB9B2B00B74623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF9817D20BB9B2B00B74623 /* Build configuration list for PBXNativeTarget "MagiSearchDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF9817E20BB9B2B00B74623 /* Debug */,
+				FAF9817F20BB9B2B00B74623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAF9814720BB9B2800B74623 /* Project object */;
+}
